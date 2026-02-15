@@ -59,8 +59,8 @@ export default function Pg4() {
       <div
         className="pg4-cursor"
         style={{
-          left: mousePos.x,
-          top: mousePos.y,
+          left: `${mousePos.x}px`,
+          top: `${mousePos.y}px`,
         }}
       />
       {/* Trail */}
@@ -69,8 +69,8 @@ export default function Pg4() {
           key={index}
           className="pg4-trail-dot"
           style={{
-            left: pos.x,
-            top: pos.y,
+            left: `${pos.x}px`,
+            top: `${pos.y}px`,
             opacity: (5 - index) / 5,
           }}
         />

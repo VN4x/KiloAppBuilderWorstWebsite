@@ -60,8 +60,8 @@ export default function Pg3() {
       <div
         className="pg3-cursor"
         style={{
-          left: mousePos.x,
-          top: mousePos.y,
+          left: `${mousePos.x}px`,
+          top: `${mousePos.y}px`,
         }}
       />
       {/* Trail */}
@@ -70,8 +70,8 @@ export default function Pg3() {
           key={index}
           className="trail-dot"
           style={{
-            left: pos.x,
-            top: pos.y,
+            left: `${pos.x}px`,
+            top: `${pos.y}px`,
             opacity: (5 - index) / 5,
           }}
         />
