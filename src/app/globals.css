@@ -1,6 +1,4 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Fruktur&display=swap');
-
 :root {
   --main-green: #608040;
   --dark-green: #100100100;
@@ -165,7 +163,7 @@ body {
 }
 
 .fruktur {
-  font-family: 'Fruktur', serif;
+  font-family: 'Comic Sans MS', cursive;
 }
 
 .lorem-ipsum {

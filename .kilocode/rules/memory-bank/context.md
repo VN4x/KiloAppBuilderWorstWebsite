@@ -4,7 +4,7 @@
 
 **Template Status**: ✅ Ready for development
 
-The template is a clean Next.js 16 starter with TypeScript and Tailwind CSS 4. It's ready for AI-assisted expansion to build any type of application.
+The template is a clean Next.js 16 starter with TypeScript and Tailwind CSS 4. It now includes additional pages (pg2 and pg3), updated global styles with Comic Sans MS font, and a doll.png image. It's ready for AI-assisted expansion to build any type of application.
 
 ## Recently Completed
 
@@ -14,6 +14,8 @@ The template is a clean Next.js 16 starter with TypeScript and Tailwind CSS 4. I
 - [x] ESLint configuration
 - [x] Memory bank documentation
 - [x] Recipe system for common features
+- [x] Added pg2 and pg3 pages, updated globals.css, and added doll.png image
+- [x] Replaced blocked Fruktur font with Comic Sans MS in globals.css
 
 ## Current Structure
 
@@ -22,6 +24,9 @@ The template is a clean Next.js 16 starter with TypeScript and Tailwind CSS 4. I
 | `src/app/page.tsx` | Home page | ✅ Ready |
 | `src/app/layout.tsx` | Root layout | ✅ Ready |
 | `src/app/globals.css` | Global styles | ✅ Ready |
+| `src/app/pg2/page.tsx` | Second page | ✅ Ready |
+| `src/app/pg3/page.tsx` | Third page | ✅ Ready |
+| `public/doll.png` | Image asset | ✅ Ready |
 | `.kilocode/` | AI context & recipes | ✅ Ready |
 
 ## Current Focus
@@ -85,3 +90,4 @@ export async function GET() {
 | Date | Changes |
 |------|---------|
 | Initial | Template created with base setup |
+| 2026-02-15 | Added pg2 and pg3 pages, updated globals.css, added doll.png; replaced Fruktur with Comic Sans MS
