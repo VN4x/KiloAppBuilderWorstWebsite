@@ -171,3 +171,89 @@ body {
   position: absolute;
   z-index: -1;
 }
+
+.pg3-cursor {
+  position: fixed;
+  width: 20px;
+  height: 140px;
+  background: #e1c0e0;
+  pointer-events: none;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  transform: translate(-50%, -50%);
+  animation: wobble 0.5s ease-in-out infinite alternate;
+}
+
+.trail-dot {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  background: pink;
+  pointer-events: none;
+  z-index: 9998;
+  left: 0;
+  top: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 0;
+}
+
+@keyframes scalePulse {
+  0%, 100% { transform: scale(0.3); }
+  50% { transform: scale(1.8); }
+}
+
+.prize-image {
+  animation: scalePulse 1s infinite, glitch 0.2s infinite;
+}
+
+@keyframes colorFlash {
+  0% { color: #ffc0cb; }
+  16.67% { color: #00ffff; }
+  33.33% { color: #ffff00; }
+  50% { color: #ffa500; }
+  66.67% { color: #800080; }
+  83.33% { color: #008000; }
+  100% { color: #ffc0cb; }
+}
+
+.chaotic-element {
+  animation: colorFlash 0.8s infinite, shake 0.3s infinite, jitter 0.15s infinite, flicker 0.1s infinite;
+}
+
+.pg3-page {
+  background: #ffffff !important;
+  min-height: 100vh;
+  position: relative;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255,255,255,0.9);
+  border: 3px solid #000;
+  padding: 30px;
+  font-size: 3em;
+  font-family: 'Comic Sans MS', cursive;
+  text-align: center;
+  z-index: 10000;
+  pointer-events: all;
+  animation: shake 0.5s infinite;
+}
+
+.error-popup {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background: #ff0000;
+  color: white;
+  padding: 20px;
+  font-size: 1.5em;
+  border: 2px solid black;
+  z-index: 10001;
+  pointer-events: none;
+  animation: glitch 0.5s infinite;
+}
