@@ -18,6 +18,7 @@ The template is a clean Next.js 16 starter with TypeScript and Tailwind CSS 4. I
 - [x] Replaced blocked Fruktur font with Comic Sans MS in globals.css
 - [x] Implemented Pg3 with chaotic animations, custom wobbling cursor, prize.png image, interactive popups, error effects, and redirect loop
 - [x] Implemented Pg4 with black background, "Go work now" text, custom cursor, keyboard/click handlers, popup flow ending game loop
+- [x] Added error.tsx for error boundary handling
 
 ## Current Structure
 
@@ -26,6 +27,7 @@ The template is a clean Next.js 16 starter with TypeScript and Tailwind CSS 4. I
 | `src/app/page.tsx` | Home page | ✅ Ready |
 | `src/app/layout.tsx` | Root layout | ✅ Ready |
 | `src/app/globals.css` | Global styles | ✅ Ready |
+| `src/app/error.tsx` | Error boundary page | ✅ Ready |
 | `src/app/pg2/page.tsx` | Second page | ✅ Ready |
 | `src/app/pg3/page.tsx` | Third page | ✅ Ready |
 | `src/app/pg4/page.tsx` | Fourth page | ✅ Ready |
