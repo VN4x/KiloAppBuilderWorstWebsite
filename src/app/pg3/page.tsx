@@ -29,7 +29,7 @@ export default function Pg3() {
       setShowFart(false);
       setShowCongrats(true);
       setTimeout(() => {
-        router.push('/');
+        router.push('/pg4');
       }, 4000);
     }
     // If clicking on congrats, do nothing, timeout will handle
